@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F6C853C-E6BA-445B-ADF4-5F60E898940C}</ProjectGuid>
+    <RootNamespace>User</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Wininet.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Breath And Life.wav" />
+    <None Include="changeinfo.bmp" />
+    <None Include="chgperinfo.bmp" />
+    <None Include="contact.bmp" />
+    <None Include="doclist.bmp" />
+    <None Include="exception.bmp" />
+    <None Include="healtool.bmp" />
+    <None Include="hisque.bmp" />
+    <None Include="infoinput.bmp" />
+    <None Include="latestque.bmp" />
+    <None Include="left.bmp" />
+    <None Include="loginbk.bmp" />
+    <None Include="messread.bmp" />
+    <None Include="mydoc.bmp" />
+    <None Include="platuse.bmp" />
+    <None Include="ReadMe.txt" />
+    <None Include="reg.bmp" />
+    <None Include="rep.bmp" />
+    <None Include="resetpass.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\User.ico" />
+    <None Include="res\User.rc2" />
+    <None Include="res\user1.0.ico" />
+    <None Include="res\User32X32.ico" />
+    <None Include="res\UserDoc.ico" />
+    <None Include="res\用户端图标.ico" />
+    <None Include="res\用户端图标1.bmp" />
+    <None Include="res\用户端图标1.ico" />
+    <None Include="welcome.bmp" />
+    <None Include="welcome1.bmp" />
+    <None Include="右背景图片.bmp" />
+    <None Include="右背景图片内部.bmp" />
+    <None Include="左界面背景图.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BCMenu.h" />
+    <ClInclude Include="BtnST.h" />
+    <ClInclude Include="CalorieToolView.h" />
+    <ClInclude Include="CApplication.h" />
+    <ClInclude Include="CDPdfview.h" />
+    <ClInclude Include="Choosedoc.h" />
+    <ClInclude Include="FTPCtrl.h" />
+    <ClInclude Include="FTPFILE.H" />
+    <ClInclude Include="LeftAccmanView.h" />
+    <ClInclude Include="LeftDrugmanView.h" />
+    <ClInclude Include="LeftHealexpertView.h" />
+    <ClInclude Include="LeftHealinfoView.h" />
+    <ClInclude Include="LeftHealplatView.h" />
+    <ClInclude Include="LeftPaneView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MySplitterWnd.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RightAddinfoView.h" />
+    <ClInclude Include="RightChangeinfoView.h" />
+    <ClInclude Include="RightChgperinfoView.h" />
+    <ClInclude Include="RightContactView.h" />
+    <ClInclude Include="RightDoclistView.h" />
+    <ClInclude Include="RightExcepinfoView.h" />
+    <ClInclude Include="RightHealrepView.h" />
+    <ClInclude Include="RightHealtoolView.h" />
+    <ClInclude Include="RightHisqueView.h" />
+    <ClInclude Include="RightInputView.h" />
+    <ClInclude Include="RightInvidocView.h" />
+    <ClInclude Include="RightLatestinfoView.h" />
+    <ClInclude Include="RightLoginView.h" />
+    <ClInclude Include="RightMessagereadView.h" />
+    <ClInclude Include="RightMydocView.h" />
+    <ClInclude Include="RightPaneView.h" />
+    <ClInclude Include="RightPlatuseView.h" />
+    <ClInclude Include="RightReg2View.h" />
+    <ClInclude Include="RightRegView.h" />
+    <ClInclude Include="RightResetpassView.h" />
+    <ClInclude Include="RightWelcomeView.h" />
+    <ClInclude Include="Row.h" />
+    <ClInclude Include="Sheet.h" />
+    <ClInclude Include="SocketClientCtrl.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="User.h" />
+    <ClInclude Include="UserDoc.h" />
+    <ClInclude Include="UserView.h" />
+    <ClInclude Include="XPGroupBox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BCMenu.cpp" />
+    <ClCompile Include="BtnST.cpp" />
+    <ClCompile Include="CalorieToolView.cpp" />
+    <ClCompile Include="CDPdfview.cpp" />
+    <ClCompile Include="Choosedoc.cpp" />
+    <ClCompile Include="FTPCtrl.cpp" />
+    <ClCompile Include="LeftAccmanView.cpp" />
+    <ClCompile Include="LeftDrugmanView.cpp" />
+    <ClCompile Include="LeftHealexpertView.cpp" />
+    <ClCompile Include="LeftHealinfoView.cpp" />
+    <ClCompile Include="LeftHealplatView.cpp" />
+    <ClCompile Include="LeftPaneView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MySplitterWnd.cpp" />
+    <ClCompile Include="RightAddinfoView.cpp" />
+    <ClCompile Include="RightChangeinfoView.cpp" />
+    <ClCompile Include="RightChgperinfoView.cpp" />
+    <ClCompile Include="RightContactView.cpp" />
+    <ClCompile Include="RightDoclistView.cpp" />
+    <ClCompile Include="RightExcepinfoView.cpp" />
+    <ClCompile Include="RightHealrepView.cpp" />
+    <ClCompile Include="RightHealtoolView.cpp" />
+    <ClCompile Include="RightHisqueView.cpp" />
+    <ClCompile Include="RightInputView.cpp" />
+    <ClCompile Include="RightInvidocView.cpp" />
+    <ClCompile Include="RightLatestinfoView.cpp" />
+    <ClCompile Include="RightLoginView.cpp" />
+    <ClCompile Include="RightMessagereadView.cpp" />
+    <ClCompile Include="RightMydocView.cpp" />
+    <ClCompile Include="RightPaneView.cpp" />
+    <ClCompile Include="RightPlatuseView.cpp" />
+    <ClCompile Include="RightReg2View.cpp" />
+    <ClCompile Include="RightRegView.cpp" />
+    <ClCompile Include="RightResetpassView.cpp" />
+    <ClCompile Include="RightWelcomeView.cpp" />
+    <ClCompile Include="Row.cpp" />
+    <ClCompile Include="Sheet.cpp" />
+    <ClCompile Include="SocketClientCtrl.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="User.cpp" />
+    <ClCompile Include="UserDoc.cpp" />
+    <ClCompile Include="UserView.cpp" />
+    <ClCompile Include="XPGroupBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="User.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="User.rc" _x007B_433268D7-2CD4-43E6-AA24-2188672E7252_x007D_="CDPdfview" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
